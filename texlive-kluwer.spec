@@ -1,5 +1,11 @@
+# revision 15878
+# category Package
+# catalog-ctan undef
+# catalog-date undef
+# catalog-license undef
+# catalog-version undef
 Name:		texlive-kluwer
-Version:	20111102
+Version:	20111103
 Release:	1
 Summary:	TeXLive kluwer package
 Group:		Publishing
@@ -74,6 +80,7 @@ TeXLive kluwer package.
 #- source
 %doc %{_texmfdistdir}/source/latex/kluwer/kluwer.dtx
 %doc %{_texmfdistdir}/source/latex/kluwer/kluwer.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -84,3 +91,5 @@ TeXLive kluwer package.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar bibtex tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
