@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-kluwer
 Version:	20111103
-Release:	1
+Release:	2
 Summary:	TeXLive kluwer package
 Group:		Publishing
 URL:		http://tug.org/texlive
