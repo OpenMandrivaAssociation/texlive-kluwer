@@ -1,9 +1,3 @@
-# revision 15878
-# category Package
-# catalog-ctan undef
-# catalog-date undef
-# catalog-license undef
-# catalog-version undef
 Name:		texlive-kluwer
 Version:	20171113
 Release:	1
@@ -32,44 +26,11 @@ TeXLive kluwer package.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/bibtex/bst/kluwer/klunamed.bst
-%{_texmfdistdir}/bibtex/bst/kluwer/klunum.bst
-%{_texmfdistdir}/tex/latex/kluwer/klu10.clo
-%{_texmfdistdir}/tex/latex/kluwer/klu105.clo
-%{_texmfdistdir}/tex/latex/kluwer/klu11.clo
-%{_texmfdistdir}/tex/latex/kluwer/klu12.clo
-%{_texmfdistdir}/tex/latex/kluwer/klu9.clo
-%{_texmfdistdir}/tex/latex/kluwer/klucite.sty
-%{_texmfdistdir}/tex/latex/kluwer/kluedit.sty
-%{_texmfdistdir}/tex/latex/kluwer/klufloa.sty
-%{_texmfdistdir}/tex/latex/kluwer/klulist.sty
-%{_texmfdistdir}/tex/latex/kluwer/klumac.sty
-%{_texmfdistdir}/tex/latex/kluwer/klumath.sty
-%{_texmfdistdir}/tex/latex/kluwer/klumono.sty
-%{_texmfdistdir}/tex/latex/kluwer/klunote.sty
-%{_texmfdistdir}/tex/latex/kluwer/kluopen.sty
-%{_texmfdistdir}/tex/latex/kluwer/klups.sty
-%{_texmfdistdir}/tex/latex/kluwer/kluref.sty
-%{_texmfdistdir}/tex/latex/kluwer/klusec.sty
-%{_texmfdistdir}/tex/latex/kluwer/klut10.clo
-%{_texmfdistdir}/tex/latex/kluwer/klut11.clo
-%{_texmfdistdir}/tex/latex/kluwer/klut12.clo
-%{_texmfdistdir}/tex/latex/kluwer/klut9.clo
-%{_texmfdistdir}/tex/latex/kluwer/klutab.sty
-%{_texmfdistdir}/tex/latex/kluwer/kluwer.cls
-%doc %{_texmfdistdir}/doc/latex/kluwer/00readme
-%doc %{_texmfdistdir}/doc/latex/kluwer/mouse.eps
-%doc %{_texmfdistdir}/doc/latex/kluwer/sampkluw.dvi
-%doc %{_texmfdistdir}/doc/latex/kluwer/sampkluw.ent
-%doc %{_texmfdistdir}/doc/latex/kluwer/sampkluw.tex
-%doc %{_texmfdistdir}/doc/latex/kluwer/sampopen.dvi
-%doc %{_texmfdistdir}/doc/latex/kluwer/sampopen.tex
-%doc %{_texmfdistdir}/doc/latex/kluwer/usrman.dvi
-%doc %{_texmfdistdir}/doc/latex/kluwer/usrman.ent
-%doc %{_texmfdistdir}/doc/latex/kluwer/usrman.tex
+%{_texmfdistdir}/bibtex/bst/kluwer
+%{_texmfdistdir}/tex/latex/kluwer
+%doc %{_texmfdistdir}/doc/latex/kluwer
 #- source
-%doc %{_texmfdistdir}/source/latex/kluwer/kluwer.dtx
-%doc %{_texmfdistdir}/source/latex/kluwer/kluwer.ins
+%doc %{_texmfdistdir}/source/latex/kluwer
 
 #-----------------------------------------------------------------------
 %prep
@@ -80,17 +41,3 @@ TeXLive kluwer package.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar bibtex tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20111103-2
-+ Revision: 752988
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20111103-1
-+ Revision: 718777
-- texlive-kluwer
-- texlive-kluwer
-- texlive-kluwer
-- texlive-kluwer
-
