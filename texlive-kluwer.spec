@@ -1,5 +1,5 @@
 Name:		texlive-kluwer
-Version:	20171113
+Version:	20180303
 Release:	1
 Summary:	TeXLive kluwer package
 Group:		Publishing
